@@ -1,9 +1,13 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.tsx'
+import App from './App'
 
-createRoot(document.getElementById('root')!).render(
+// getElementById pode retornar null (se o elemento não existir).
+// O "!" diz ao TypeScript: "garanto que o #root existe no index.html".
+const raiz = document.getElementById('root')!;
+
+createRoot(raiz).render(
   <StrictMode>
     <App />
   </StrictMode>,
