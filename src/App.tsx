@@ -1,8 +1,14 @@
+import Rodape from './components/Rodape'
+
 function App() {
   return (
-    <main className="conteudo">
-      <h1>Olá, React com TypeScript!</h1>
-    </main>
+    <div className="app">
+      <main className="conteudo">
+        <h1>Olá, React com TypeScript!</h1>
+      </main>
+
+      <Rodape />
+    </div>
   );
 }
 
